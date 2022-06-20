@@ -99,15 +99,15 @@
               </div>
               <div class="form-group">
                   <label for="caption" class="form-label">Caption</label>
-                  <textarea id="caption" name="caption" value="{{ $editSchedule->caption }}" class="form-control" required></textarea>
+                  <textarea id="caption" name="caption" class="form-control" required>{{ $editSchedule->caption }}</textarea>
               </div>
               <div class="form-group">
                   <label for="created_at" class="form-label">Created At</label>
-                  <input type="datetime-local" id="created_at" name="created_at" value="{{ $editSchedule->created_at }}" class="form-control" value="" min="1990-01-01T00:00" max="2050-01-01T00:00" placeholder="dd-mm-yyyy" required>
+                  <input type="datetime-local" id="created_at" name="created_at" value="{{ $editSchedule->created_at }}" class="form-control" min="1990-01-01T00:00" max="2050-01-01T00:00" placeholder="dd-mm-yyyy" required>
               </div>
               <div class="form-group">
                   <label for="updated_at" class="form-label">Updated At</label>
-                  <input type="datetime-local" id="updated_at" name="updated_at" value="{{ $editSchedule->updated_at }}" class="form-control" value="" min="1990-01-01T00:00" max="2050-01-01T00:00" placeholder="dd-mm-yyyy" required>
+                  <input type="datetime-local" id="updated_at" name="updated_at" value="{{ $editSchedule->updated_at }}" class="form-control" min="1990-01-01T00:00" max="2050-01-01T00:00" placeholder="dd-mm-yyyy" required>
               </div>
               <div class="form-group">
                   <button type="submit" class="btn rounded-pill btn-submit" onclick="return confirm('Yakin Data Mau Diubah?')">Ubah</button>

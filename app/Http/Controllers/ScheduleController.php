@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Models\Schedule;
 use App\Models\Jnskonten;
 use App\Models\Platform;

@@ -63,23 +63,22 @@
       <div id="content" class="p-4 p-md-5 pt-5">
         <br>
         <div class="shadow p-3 mb-1 bg-white rounded">
-          <h1 class="mb-4">Dashboard</h1>
           <div class="row">
           <!-- Card Sosmed Instagram-->
             <div class="col-sm-6 mb-4 text-center" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Instagram</h5>
-              <p class="card-text">Berikut akun resmi instagram PT. Fidi IT Kreatif</p>
-              <a href="https://www.instagram.com/fidiitkreatif/?hl=id" class="btn btn-primary rounded-pill">Klik Disini</a>
+              <h5 class="card-title">User</h5>
+              <p class="card-text">Total User</p>
+              <a class="btn btn-primary rounded-pill text-white">{{ $users }}</a>
             </div>
           </div>
           <!-- Card Sosmed Instagram-->
           <!-- Card Sosmed Facebook-->
           <div class="col-sm-6 mb-4 text-center" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Facebook</h5>
-              <p class="card-text">Berikut akun resmi facebook PT. Fidi IT Kreatif</p>
-              <a href="https://www.facebook.com/Fidi-Inovasi-Teknologi-Kreatif-102015534556970/" class="btn btn-primary rounded-pill">Klik Disini</a>
+              <h5 class="card-title">Schedule</h5>
+              <p class="card-text">Total Schedule</p>
+              <a class="btn btn-primary rounded-pill text-white">{{ $schedules }}</a>
             </div>
           </div>
           <!-- Card Sosmed Facebook-->

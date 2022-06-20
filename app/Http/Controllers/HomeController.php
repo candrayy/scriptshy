@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Schedule;
 
 class HomeController extends Controller
 {
@@ -13,7 +15,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $users = User::count();
+        $schedules = Schedule::count();
+        return view('home', compact('users', 'schedules'));
     }
 
     /**

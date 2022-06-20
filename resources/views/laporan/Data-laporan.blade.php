@@ -86,7 +86,7 @@
                       <td>{{ $item->platform->platform }}</td>
                       <td>{{ $item->hashtag->hashtag }}</td>
                       <td>{{ $item->judul_konten }}</td>
-                      <td>{{ $item->caption }}</td>
+                      <td>{!! Str::limit($item->caption, 25) !!}</td>
                       <td>{{ $item->created_at }}</td>
                       <td>{{ $item->updated_at }}</td>
                   </tr>

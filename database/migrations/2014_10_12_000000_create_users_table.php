@@ -21,6 +21,11 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        DB::table('users')->insert([
+            ['username' => 'admin', 'level' => 'admin', 'password' => Hash::make('admin')],
+            ['username' => 'sistem', 'level' => 'sistem', 'password' => Hash::make('sistem')],
+        ]);
     }
 
     /**

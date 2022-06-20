@@ -65,7 +65,7 @@
         <div class="shadow p-3 mb-1 bg-white rounded">
           <h1 class="mb-4">Data Schedule</h1>
           <a href="{{ route('tambah-data-schedule') }}" class="btn p-auto rounded-pill mb-3 btn-primary">Tambah Data</a>
-          <table class="table table-hover table-bordered">
+          <table class="table table-hover table-bordered" style="height:20px;overflow-y:scroll">
               <thead>
                   <tr>
                       <th scope="col">No.</th>
@@ -87,7 +87,7 @@
                       <td>{{ $item->platform->platform }}</td>
                       <td>{{ $item->hashtag->hashtag }}</td>
                       <td>{{ $item->judul_konten }}</td>
-                      <td>{{ $item->caption }}</td>
+                      <td>{!! Str::limit($item->caption, 25) !!}</td>
                       <td>{{ $item->created_at }}</td>
                       <td>{{ $item->updated_at }}</td>
                       <td>

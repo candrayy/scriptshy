@@ -10,6 +10,13 @@ class LoginController extends Controller
 {
     public function index()
     {
+        if (Auth::check()) {
+            if (Auth::user()->level == 'admin') {
+                return redirect('/beranda');
+            }elseif (Auth::user()->level == 'sistem') {
+                return redirect('/beranda');
+            }
+        }
         return view('user.Login');
     }
 
